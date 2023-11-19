@@ -1,0 +1,5 @@
+services:
+  - name: mail2rest
+    type: web
+    buildCommand: docker build -t mail2rest .
+    startCommand: docker run -p 8080:8080 -e PORT=8080 mail2rest
